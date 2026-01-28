@@ -1,0 +1,215 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+.menu button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background: #ff9800;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    margin-bottom: 15px;
+}
+section {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+}
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark section {
+    background: #1e1e1e;
+}
+
+.dark nav {
+    background: black;
+}
+body {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.page {
+    background: white;
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px gray;
+    line-height: 1.7;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+.highlight-box {
+    background: #e3f2fd;
+    padding: 15px;
+    border-left: 5px solid #2196f3;
+    margin-top: 20px;
+}
+.menu {
+    background: linear-gradient(to right, #2196f3, #00bcd4);
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Premium Navbar Buttons */
+
+.menu {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.menu button {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    margin: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.menu button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Click Effect */
+.menu button:active {
+    transform: scale(0.95);
+}
+
+/* Active Page */
+.menu button.active {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+}
+
+
+
+.menu button:active {
+    transform: scale(0.95);
+}
+.menu button.active {
+    background: #ff9800;
+    color: white;
+}
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* Image Hover Effect */
+
+.big-pic,
+.profile-pic,
+.page-pic {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.big-pic:hover,
+.profile-pic:hover,
+.page-pic:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+.big-pic:hover,
+.profile-pic:hover {
+    border: 3px solid #2196f3;
+}
+/* Page Transition Animation */
+
+body {
+    opacity: 0;
+    animation: fadeInPage 0.8s ease forwards;
+}
+
+@keyframes fadeInPage {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade out before leaving */
+.fade-out {
+    animation: fadeOutPage 0.5s ease forwards;
+}
+
+@keyframes fadeOutPage {
+    to {
+        opacity: 0;
+    }
+}
